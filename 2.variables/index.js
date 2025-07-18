@@ -6,3 +6,11 @@ let nombrealumno
 //llamo al avriable , hago uso del operador de asignacion, le doy el dato
 nombrealumno="gabriel"
 console.log( nombrealumno)
+
+//existen  una tecnica donode declaramos a inicialisamos una variable en una sola linea de codigo
+let edadalumno=18
+const pi=3.1416
+edadalumno="hola"
+console.log(edadalumno)
+console.log(pi)
+//solo se usara let cuando

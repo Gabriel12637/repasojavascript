@@ -69,6 +69,17 @@ Son aquellos que estan en medio de dos valores y que retorna un unico valor
 Son aquellos que evaluan tres valores y retornan un solo valor
 - operador condicional
 ## 4. CONTROLES DE FLUJO
+nuestro programas en javascript contiene mas de una sentencia y las sentencias 
+son ejecuciones una a una como si fuera una historia, de arriba hacia abajo
+como un camino recto.
+### 1. control de decision (if-else)
+javascript nos permite crear caminos alternativos en nuestros programas,
+dependiendo en una desicion a esto se lo conoce como caminos o ejecucion
+condicional , que ejecutara una sentencia u otra teniendo encuenta la condicion 
+asi podemos crear multiples caminos u opciones en nuestro proograma.
+si tenemos una condicion verdadera se ejecutara una sentencia si tenemos
+una condicion false se ejecutara otra sentencia totalmente distinta.
+**observacion** la ejecucion condicional rompe el flujo normal de un programa
 ## 5. FUNCIONES
 ## 6. MÉTODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS (tarea)
 ## 7. DOM

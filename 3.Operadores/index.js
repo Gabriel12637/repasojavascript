@@ -4,9 +4,13 @@ let negacion=!false
 console.log(negacion)
 
 // operadores binarios
-let suma=63+29
-let resta=87-76
-console.log(resta)
+let suma=63+29;
+let resta=87-76;
+let producto=4*5;
+let divicion=3/3;
+let potencia=3**2;
+let residuo=10%3;
+console.log(divicion)
 
 // tarea 
 // operadores de comparacion
@@ -38,6 +42,9 @@ console.log(esVerdadero || esFalso); // true
 console.log(!esVerdadero);           // false
 
 // operadores ternario
+//1. el primer valor debe de ser un valor boleano
+//2. el segundo valor se mostrara  si el primer valor es verdadero
+//3. el tercer valor se mostrara si el primer valor es falso
 let edad = 17;
 
 // Condición ? si_verdadero : si_falso

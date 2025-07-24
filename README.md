@@ -1,66 +1,91 @@
-# taller de repaso de javascript
-> [!warning] - observacion: quokka debe ejercutar en cada archivo
+# TALLER DE REPASO DE JAVASCRIPT
+> [!WARNING] Observacion: 
+> Quokka se debe ejecutar en cada archivo
 
-> [!tip] quokka detectar que en nuestro proyecto tenemos nodejs y lo 
-ejecuta para poder ver la consola en vivo
+> [!TIP] 
+> Quokka detecta que en nuestro proyecto tenemos `node.js` y lo ejecuta para poder ver la consola en vivo 
+## 1. TIPOS DE DATOS
+Es la manera de como capturamos la informacion
+> [!NOTE]
+> Javascript tiene funcione predeterinadas
+para mostrar un mensaje por consola `console.log()`, para poder verficar que tipo de dato estamos manejando en javaescript tambien tenemos una funcion por defecto llamada `typeof()`
+
+Se clasifica en 2 grupos:
+>### PRIMITIVOS
+son datos que siempre existen
+
+**Numericos**
+- Enteros positivos
+- Enteros negativos
+- Decimal positivo
+- Decimal negativo
+- NaN (Not and Number)
+
+**Textos**
+- Caracteres
+- Caracteres especiales
+- String
+
+**Booleanos**
+- True => 1
+- False => 0
+>### ESTRUCTURADOS
+**Array (lista)**
+- array de tipo numerico
+- array de tipo string
+- array de tipo mixto
+
+Como esta estructurado un array en javascript
+![alt text](assets/image.png)
+**Objetos (diccionario):** Son similares a las listas con la unica diferencia que envez de tener valor e indice sus elementos trabajan con clave y valor.
+![alt text](assets/image2.png)
+## 2. VARIABLES (ENLACES, BINDING)
+Es la tecnica que se usa para apuntar en dirreccion en memoria y al valor o dato relacional o que ese encuentre almacenado en ese momento.
+
+Tenemos dos pasos pra declarar una varibales:
+1. Primero declarar la variable/constante
+2. Segundo inicializar la variable/constante
+> [!Note]
+> Para crear una variable primero tenemos que crear el enlace y luego darle el nombre de la variable/constante
+
+> [!Tip] Recomendación
+> - `let:` Usar cuando el valor tendra que variar
+> - `const:` Usar cuando el valor sera el mismo siempre
+> - `var:` evitar usar
+> - `let` `var:` Ambos nos permiten crear variables, su unica diferencia es el alcance ambito o `scope` (averiguar)
 
 
-## 1. tipo de datos
-en javascript se clasifican en dos grandes grupos
-> [!tip] javascript tiene funciones predeterminadas por ejemplo para
-mostrar un mensaje por consola.log(), para poder verificar que tip de
-dato estamos menejando en javascript tambien tenemos una funcion por
-defcto llamado  typeaof()
-### primitivos
-son datos que siempre existiran 
-1. numerico 
-  - enteros positivos 
-  - enteros negativos
-  - decimal positivo
-  - decimal negativo 
-  - nan
-2. texto 
-  - caracteres          -10001000 - 97 -A
-  - caracteres especiales 
-  - sctring 
-3. booleanos
-  - true  -1
-  - false -0
-### estructurados 
-1.array (lista)
-  - array de tipo numerico
-  - array de tipo string
-  - array de tipo mixto
-  - como esta estructurado un array en javascript 
-2.objetos(diccionario)
-los objetos son similares a las listas con la unica 
-diferencia que en vez de tener valor de indice sus 
-elementos trabajan con clave:valor
--como esta estrucuturado ubjeto 
-## 2. variebles (enlaces , binding)
-es la tecnica que se usa para apuntar a una direccion 
-en memoria y el valor o dato relacinando o que se
- encuentre alamacenado en ese momento.
- tenemos dos pasos para crear una variable
- 1.primero declarar la variable/constante
- 2.segunda ainicializar la variable/constante
- **observacion**para crear una variable primero 
- tenemos que crear el enlace luego darle el nombre
- de la variable/constante: para la varibles tenemos
- las palabras reservadas keyword - let - var
- para las constantes tenemos la palabra reservada
- keywod - const
- **recomendaciones**
- - let usar cuando el valor tendra un variar
- - const usar cuando el valor sera el mismo siempre
- - let , var ambos nos permiten crear variables su 
- unica diferencia es el ambito o scope (averiguar)
-## 3. operadores
-## 4. funciones
-## 5. metodos para trabajar con datos estructurados
-### acceder
-### modifica
-### crear
-### insertar
-### eliminar
-### ordenar 
+## 3. OPERADORES
+**Su clasificacion general de divide en tres:**
+> ### Operadores unarios
+Son aquellos que tiene el operador a la izquierda del valor y que retorna un unico valor
+- operador de negacion
+> ### Operadores binarios
+Son aquellos que estan en medio de dos valores y que retorna un unico valor
+- operadores aritmeticos
+- operadores de comparacion
+- operadores logicos
+> ### Operadores ternarios
+Son aquellos que evaluan tres valores y retornan un solo valor
+- operador condicional
+## 4. CONTROLES DE FLUJO
+## 5. FUNCIONES
+## 6. MÉTODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS (tarea)
+## 7. DOM
+### Métodos para Arrays
+Son una forma común de almacenar datos estructurados como listas
+- `map():` Crea un nuevo array aplicando una funcion a cada elemento.
+- `filter():` Crea un nuevo array con los elementos que cumpla una función
+- `reduce():` Reduce los elementos a un solo valor
+- `find():` Retorna el primer elemento que cumpla una condición
+- `some():` Devuelve `True` si al menos uno cumple una condición
+- `every():` Devuelve `True` si todos cumplen la condición
+- `flat():` Aplana arrays anidados
+- `sort():` Ordena los elementos
+### Métodos para objetos
+Los objetos permite estructurar información como pares clave/valor
+- `object.keys():` Devuelve un array con las claves
+- `object.values():` Devuelve un array con las valores
+- `object.estries():` Devuelve un array de pares `[clave, valor]`
+- `object.assing():` Copia propiedades de uno o más objetos a otro
+- `hasOwnProperty:` Verifica si una propiedad existe

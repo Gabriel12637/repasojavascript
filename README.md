@@ -80,6 +80,12 @@ asi podemos crear multiples caminos u opciones en nuestro proograma.
 si tenemos una condicion verdadera se ejecutara una sentencia si tenemos
 una condicion false se ejecutara otra sentencia totalmente distinta.
 **observacion** la ejecucion condicional rompe el flujo normal de un programa
+programa.
+### 2. bucles (for) - tarea con sus ejemplo  en codigo 
+Un bucle for permite ejecutar un bloque de código un número determinado de veces, usando una variable de control.
+### 3. blucles(while) - tarea con sus ejemplos en codigo
+Un bucle while ejecuta un bloque de código mientras una condición sea verdadera.
+
 ## 5. FUNCIONES
 ## 6. MÉTODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS (tarea)
 ## 7. DOM

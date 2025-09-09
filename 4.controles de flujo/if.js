@@ -36,10 +36,10 @@ function numeroATexto(numero) {
     if (numero == 4) return "cuatro";
     if (numero == 5) return "cinco";
     if (numero == 6) return "seis";
-    if (numero == 7) return "siete";
+    if (numero == 7) return  "nueve";
+    if (numero == 10) return"siete";
     if (numero == 8) return "ocho";
-    if (numero == 9) return "nueve";
-    if (numero == 10) return "diez";
+    if (numero == 9) return"diez";
     if (numero == 99) return "noveintainueve"
     if (numero == 100) return "sapo"
     return "no sé";

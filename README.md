@@ -87,7 +87,24 @@ Un bucle for permite ejecutar un bloque de código un número determinado de vec
 Un bucle while ejecuta un bloque de código mientras una condición sea verdadera.
 
 ## 5. FUNCIONES
+las funciones de js son bloques de codigo que se ejecutan de manera independiente , podemos decir tambien que 
+son mini programas que toman datos como entra t retornan otros datos como salida.
+Las funciones son fundamentales para el correcto ordenamiento de nuestro codigo
+ademas que nos permite separar de una manera mas ordenada nuestra logica y evitar repetir
+el codigo muchas veces
+existen tres tipos de funciones
+### tipos de funciones
+#### 1.funciones por declaracion 
+este tipo de funcion es la mas conocida y la mas usada
+su estructura es la siguiente:
+
 ## 6. MÉTODOS PARA TRABAJAR CON DATOS ESTRUCTURADOS (tarea)
+### acceder
+### modifica
+### crear
+### insertar
+### eliminar
+### ordenar
 ## 7. DOM
 ### Métodos para Arrays
 Son una forma común de almacenar datos estructurados como listas

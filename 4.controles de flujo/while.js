@@ -12,3 +12,14 @@ while (num <= 10) {
     num++;
 }
 console.log("La suma es:", suma);
+
+
+let frutas = ["manzana", "banana", "pera", "uva"];
+let index = 0;
+while (index < frutas.length) {
+    console.log(frutas[index]);
+    index++;
+}
+// while es usado para repetir un bloque de codigo mientras una condicion sea verdadera
+// si la condicion es falsa el bloque de codigo no se ejecuta
+// si la condicion nunca llega a ser falsa el bloque de codigo se ejecuta infinitamente

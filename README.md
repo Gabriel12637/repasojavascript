@@ -147,6 +147,33 @@ let cad1="vengo"
 console.log(car1.concat(cad2,cad3))
 //retorna -> oh me vengo
 ```
+#### trim 
+este metodo elimina los espacios que existen al inicio o final de una cadena de texto
+```js
+let texto="hola"
+let nuevotexto=texto.trim() // hola
+let otrotexto="hola"
+let nuevootrotexto=otrotexto.trim()//hola
+```
+#### slice-corte
+este metodo nos permite extraer partes de una cadena epecificando sus indices,donde comenzar y hasta donde mostrar
+```js
+let parrafo"hola soy percy"
+// solo quiero que muestre percy
+parrafo.slice(9)//percy
+parrafo.slice(5,8)//soy
+```
+#### split
+este metodo retorna una lista basandoce en unseparador que se le indique
+```js
+let parrafo="solo se que nada se"
+parrafo.split("")//["solo","se","que","nada","se"]
+let url="google.com/search?=gatitos"
+let gatitos=url.split("=")//["google.com/search?",""gatitos]
+console.log(gatitos[1])//gatitos
+let listafrutas="manzana,tomate,pera,naranja"
+listafrutas.split(",")
+```
 ### 6.2. Metodos para LISTAS
 ### 6.3. Metodos para STRING
 
@@ -171,4 +198,4 @@ Scope (ambitode ejecucion o el alcance). es como un contenedor que alverga todas
 
 - `VAR:` es un tipo de variable que sin importar en que bloque de codigo la declaremos podemos acceder desde cualquier lugar a este.
 - `LET:` es un tipo de variable que solo podemos acceder unicamente a esta dentro un solo bloque de codigo.
-## DOM
+## 7. DOM

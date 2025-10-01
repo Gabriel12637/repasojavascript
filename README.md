@@ -248,7 +248,14 @@ let buscaE=vocales.includes(`e`)
 let buscaA=vocales.includes(`a`)
 // retorna true
 ```
+#### filter 
+este metodo se usa para encontrar elementos dentro de una lista que cumpla con cierta condicion 
+```js
+let numeros=[2,3,4,5,6,7,8]
+// deseo una lista con los numeros que sean menor a 4
+let nuevosNumeros=numeros.filter(n=>{n<4})
 
+```
 ### 6.3. Metodos para STRING
 ## 7.es6
 

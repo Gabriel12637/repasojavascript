@@ -20,14 +20,14 @@ lista[10] = 20
 
 console.log(lista.length)
 console.log(lista)
-// 
+
 let numberpars  = []
 for (let i = 0; i <= 20; i ++) {
     if (i % 2 == 0) {
         numerosPares[numerosPares.length] = i
     }
 }
-//
+
 let numerosPares = []
 for (let i = 0; i <= 20; i ++) 
     if (i % 2 === 0) {
@@ -35,20 +35,20 @@ for (let i = 0; i <= 20; i ++)
 }
 console.log(numerosPares) 
 
-//
+
 
 let amigos = [`j`, `p`, `m`]
 amigos.unshift(`c`) 
 amigos.push(`a`)
 console.log(amigos) 
-//
+
 
 let frutas = [`manzana`, `pera`, `uva`]
 let uva=frutas.pop()
 uva
 frutas
 
-//
+
 let texto=["hola","como","","estas"]
 delete texto[2]
 texto 
@@ -72,3 +72,19 @@ Numeros.forEach(n=>{console.log(n*2)})
 let Number=[1,2,3,4,5,6]
 let nuewNumber=number.map(n=>{return n+1})
 console.log(nuewNumber)
+
+let fruits=[`manzana`,`pera`,`uva`,`sandia`]
+let estAPera=fruits.includes(`pera`)
+console.log(estAPera)
+let estAMango=fruits.includes(`mango`)
+console.log(estAMango)
+
+let listNumbers=[1,2,3,4,5,6]
+// obtener una nueva lista con los numeros mayores a 3
+let mayorTres=listNumbers.filter(n=>{ return n>3})
+console.log(mayorTres)
+
+// de una lista numero del 1 al 10 usando filter eliminar el numero 1
+let unaaDiez=[1,2,3,4,5,6,7,8,9,10]
+let sinUno=unaaDiez.filter(n=>{return n!==1})
+console.log(sinUno) 

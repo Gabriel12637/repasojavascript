@@ -256,7 +256,29 @@ let numeros=[2,3,4,5,6,7,8]
 let nuevosNumeros=numeros.filter(n=>{n<4})
 
 ```
+#### find
+este metodo se usa para encontrar el primer elemento que cumpla con cierta condicion 
+a diferencia el `filter` solo retorna un elemento el que coincida con la condicion
+```js
+let lisNumeros=[10,11,13,14]
+// devuelbe el numeros el numero menor a 10
+let menorDIez=lisNumero.find(n=>{return n>10})
+console.log(menorDiez)
+// retorna 11 - el primer elemento que coincide con la condicion 
+```
 ### 6.3. Metodos para STRING
+#### creando un objeto
+```js
+// objeto o diccionario vacio
+let objeto={}
+```
+#### agregamos lementos a un objeto 
+recuerden que un elemento de un objeto esta conformado por `clav:valor`
+```js
+objeto ["nombre"]="ruth"
+objeto ["edad"]=18
+objeto ["cui"]=08674523
+```
 ## 7.es6
 
 

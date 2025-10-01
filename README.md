@@ -175,7 +175,82 @@ let listafrutas="manzana,tomate,pera,naranja"
 listafrutas.split(",")
 ```
 ### 6.2. Metodos para LISTAS
+#### crear una lista
+```js
+let lista=[]
+```
+#### agregamos elementos a una lista
+```js
+lista[0]="manzana"
+```
+#### agregando elementos al final de una lista
+el metodo `push` agrega elementos al final de una lista 
+```js
+let lista=[]
+lista.push("manzana")
+```
+#### agregando elementos al inicio de una lista 
+el metodo `unshift` agrega elementos al inicio de una lista
+```js
+let amigos=[`rony`,`lisbet`,`jose`]
+amigos.unshift("ronal")
+```
+#### removiendo elementos de una lista 
+#### pop
+el metodo `pop` al contrario de push extrae el ultimo elemento de una lista.
+#### shift
+el metodo `shift` al contrario de unshift extrae el primer elemento de ua lista
+#### eliminando elementos de una lista
+#### delete
+elimina un elemento en bas ea su idice
+```js
+let texto=["hola","como","","estas"]
+delete texto[2]
+```
+#### splice
+este metodo elimina este elemento en base a su indice y a la cantidad de elementos a eliminar
+```js
+let vocals=[`a`,`e`,`e`,`i`,`o`,`u`]
+vocals.splice(2.1)
+```
+#### conbinando o uniendo listas(arrays)
+#### concat
+este metodo crea un nuevo arrays que contiene los elementos del array original seguido por los elementos de una o ma arrays proporcionados
+```js
+let amigosprimaria=[`alfredo`,`luis`,`edgar`]
+let amigossecundaria=[`edison`,`remy`,`muigel`]
+let amigossuperior=[`jpsue`,`marmol`,`hamby`]
+amigos.concat(amigosprimaria,amigossecundaria,amigossuperior)
+consoles .log()
+```
+#### metodos para iterar una lista 
+#### forEach
+este metodo ejecuta una funcion anonima por cda elemento de un array
+```js
+let Numeros=[1,2,3,4,5,6]
+Numeros.forEach(n=>console.log(n+1))
+```
+#### map
+este metodo ejecuta una funcion anonima por cada elemento de un array,generando una nueva lista
+```js
+let Number=[1,2,3,4,5,6]
+let nuewNumber=number.map(n=>{return n+1})
+console.log(nuewNumber)
+```
+#### metodos para buscar elementos en una lista
+#### includes
+este metodo busca un valor en especifico y devuelve un valor booleano 
+en caso de encontrar el valor buscado retorna true caso contrario false
+```js
+let vocales=[`a`,`i`,`o`,`u`]
+let buscaE=vocales.includes(`e`)
+// retorna false
+let buscaA=vocales.includes(`a`)
+// retorna true
+```
+
 ### 6.3. Metodos para STRING
+## 7.es6
 
 
 ## Metodos para ARRAY

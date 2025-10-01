@@ -277,8 +277,21 @@ recuerden que un elemento de un objeto esta conformado por `clav:valor`
 ```js
 objeto ["nombre"]="ruth"
 objeto ["edad"]=18
-objeto ["cui"]=08674523
+objeto ["cui"]=08674523 
 ```
+#### actualizando elementos de nuestro objeto
+para realizar la actualizacion del valor de un elemento tenemos que acceder a travez de su
+clave y aignarle el nuevo valor
+**observacion** la clave debe ser la misma a actualizar de no existe creada una nueva
+```js
+objeto["edad"]=20
+```
+#### elimonando un elemento de nuestro objeto
+para eliminar un elemento de un objeto hacemos uso de un operador unario `delete`
+```js
+delete objeto.cui
+``` 
+
 ## 7.es6
 
 

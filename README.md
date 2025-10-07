@@ -292,7 +292,7 @@ para eliminar un elemento de un objeto hacemos uso de un operador unario `delete
 delete objeto.cui
 ``` 
 
-## 7.es6
+
 
 
 ## Metodos para ARRAY
@@ -315,4 +315,21 @@ Scope (ambitode ejecucion o el alcance). es como un contenedor que alverga todas
 
 - `VAR:` es un tipo de variable que sin importar en que bloque de codigo la declaremos podemos acceder desde cualquier lugar a este.
 - `LET:` es un tipo de variable que solo podemos acceder unicamente a esta dentro un solo bloque de codigo.
-## 7. DOM
+## 7.es6
+### arrow function 
+### destructurin
+este es una tecnica para el desempaquetado de listas u objetos de variables
+esta tecnica facilita el acceso a los elementos de una lista u objeto
+```js
+let alumno={
+   "nombre":"miguel",
+   "edad":"19"
+}
+console .log (alumno.nombre)
+console .log (alumno["edad"])
+//desestructuracion
+let {nombre,edad}=alumno
+
+
+```
+## 8. DOM

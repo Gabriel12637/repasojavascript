@@ -333,3 +333,72 @@ let {nombre,edad}=alumno
 
 ```
 ## 8. DOM
+
+- segun sus siglas es Modelo deObjeto de Documento
+- para la web es una API del navegador ,eson significa que nos proporciona una interfas para comunicarnos entrer html y javascript.
+- Segun su funcionalidad DOM e el encargado de convertir documento html y css en objetos de javascript , o en un arbol de objetos.
+- Para javascript el DOM es un objeto con el que podemos leer y modificar a nuestro antojo.
+- La manera como DOM nos permite interactuar con nuestro documentos html y css son a traves de selectores.
+
+### Selectores
+
+Es la manera de como podremos manipular el DOM este es primer paso que devemos dominar para realizar operaciones de lectura o modificasion
+#### captura de elementos
+#### Selectores tradicionales
+
+Estos selectores son metodos de documento porque`DOM` trabaja con el documento.
+```js
+//selector de id
+document.getElemntByid("mi_div")
+//<section id="mi_div"></section>
+//--selectores por su atributo name
+//<input name="dni" value="34556"><>
+//dni="34556"
+document.getElementByName("dni")
+document.setElemntTagName("dni")
+// todos los elementos 
+//--Selectores por su tag
+//<h1></h1>
+document.getElementByTagName("h1")
+//<div class=rojo></div>
+```
+[!tip] es la programacion web DAW se hace el uso de dos tecnicas , 1. obtecion de datos(get), 2. creacion de datos(set)
+##### selectores modernos o avanzados
+```js
+//para la captura de un elemento, o el primer elemento que coincida conla busqueda
+document.querySelector()
+//busca y obtiene el elemento que coincida con el nombre de la clase 
+document.querySelector(".nombre_clase")
+//busca y obtiene el elemento que coincida con el monbre del id
+document.querySelector("#nombre_id")
+//busca y obtiene el elemento que coincida con el nombre de la etiqueta
+document.querySelector("p")
+document.querySelector(".input[name=dni]")
+
+//para acceder a todas las coincidencias
+//esto retorna un array con todas las coincidencias
+document.querySelector(".nombre_clase")
+```
+#### acceder a contenido y actualizar contenido
+
+una vez capturado el elemento con `queryCelector` pueden hacer
+uso de `textContent`para acceder al contenido del elemento,de
+esta misma forma podemos editar o actualizar el contenido
+`textContent`esto lo que es actualizar el contenido
+anterior con el contenido que se le estaasignando
+`textContent` solo se usa si deseamos agregar contenido de tipo
+texto, si deseamos setear o agregarcontenido de tipo `html` se 
+debera usar `innerHTML`
+```js
+//<p id="text">este es un contenido</p>
+let etiquetaP=document.querySelector("#text")
+console.log(etiquetaP.textContent)
+//este es un contenido
+etiquetaP.textContent="nuevo texto"
+console.log(etiquetaP.textContent)
+//nuevo texto
+
+//<div id="contenedor"></div>
+let div=document.querySelector("#contenedor")
+div.innerHTML="<p>este es un parrafo</p>"
+```

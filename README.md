@@ -470,4 +470,37 @@ secction.classlist.remove("colo-fondo-rojo")
 section.style.backgroundColor="red"
 ```
 ### Eventos (tarea-averiguar)
-
+los eventos son acciones o sucesos que ocurren en la página web y que pueden ser detectados por el navegador, como hacer clic en un botón, mover el mouse, presionar una tecla, cargar la página, etc. Los eventos permiten que tu página sea interactiva, ya que puedes ejecutar código cuando ocurren estas acciones.
+## click
+```js
+// Suponiendo que tienes un botón en tu HTML: <button id="miBoton">Haz clic</button>
+//selecciona un botón con el id miBoton y le agrega un evento para que, cuando el usuario haga clic sobre él, aparezca una alerta.
+let boton = document.querySelector("#miBoton");
+boton.addEventListener("click", function() {
+    alert("¡Hiciste clic en el botón!");
+});
+```
+## teclado
+```js
+//detecta cuando el usuario presiona cualquier tecla y muestra en la consola cuál fue la tecla presionada.
+document.addEventListener("keydown", function(event) {
+    console.log("Tecla presionada:", event.key);
+});
+```
+## mouse
+```js
+//Selecciona un elemento con id miCaja y cambia su color de fondo a amarillo cuando el mouse pasa por encima.
+let caja = document.querySelector("#miCaja"); // <div id="miCaja"></div>
+caja.addEventListener("mouseover", function() {
+    caja.style.backgroundColor = "yellow";
+});
+```
+## formulario
+```js
+//selecciona un formulario con id miFormulario y, al enviarlo, evita que la página se recargue y muestra una alerta.
+let formulario = document.querySelector("#miFormulario"); // <form id="miFormulario"></form>
+formulario.addEventListener("submit", function(event) {
+    event.preventDefault(); // Evita que se recargue la página
+    alert("Formulario enviado");
+});
+```

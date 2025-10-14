@@ -379,7 +379,7 @@ document.querySelector(".input[name=dni]")
 //esto retorna un array con todas las coincidencias
 document.querySelector(".nombre_clase")
 ```
-#### acceder a contenido y actualizar contenido
+#### acceder,actualizar contenido,crear y remover atributos
 
 una vez capturado el elemento con `queryCelector` pueden hacer
 uso de `textContent`para acceder al contenido del elemento,de
@@ -402,3 +402,72 @@ console.log(etiquetaP.textContent)
 let div=document.querySelector("#contenedor")
 div.innerHTML="<p>este es un parrafo</p>"
 ```
+una vez ya conocido la forma de capturar la forma de elementos `html` 
+y la forma de setear contenido(`textContent`) y html(`innerHTML`),
+tambien podemos setear atributos y removerlos
+```js
+//<div id="contenido">contenido</div>
+//data description
+let contenido=documen.querySelector("#contenido")
+//entre parentesis van dos parametros primero el nombre del atributo a crear y segundo el valor que debe tener
+contenido.setAttribute("data-description","valor de mi data-description")
+//<div id="contenido" data-description="valor de mi data-description">contenido</div>
+
+//eliminar contenido el atributo creado
+//entre parentesis el nombre del atributo que se ve eliminar
+contenido.removeAttribute("data-description")
+```
+#### como agregar y eliminar elementos 
+para crear un nuevo elemento no necesitamos un nuevo elemento por
+que creamos un elemento nuevo
+```js
+//entre los parentesis la etiqueta a crear
+let nuevoEtiquetaP=documen.createElement("p")
+//agregar contenido a mi nueva etiqueta
+nuevaEtiquetaP.textContent="informacion en el parrafo"
+
+//para que esta informacion aparesca de manera visible en mi html debemos agregarlo a un elemento padre
+/*
+<body>
+</body>
+*/
+let body=document.querySelector("body")
+// hacer uso del metodo que me permite asignarle nuevos hijoa
+body.appendChild(nuevoEtiqueta) 
+//deseo eliminar ese elemento que acabo de crear
+//usamos el nombre del elemento a eliminar y luego usamos el metodo remove()
+nuevoEtiquetaP.remove()
+```
+#### modificar clases y estilos
+estos metodos  que veremos acontinuacion no permitiran cambiar de 
+manera interactiva los estilos scc se puedan  aplicar ciertas 
+elementos  pero haciendo  uso de  js y logrando  sus cambios d estilo
+de manera con estos elementos agregamos clases que existan.
+-archivo **index.html**
+```html
+<!--DODTYPE html head-->
+<body>
+   <section id="principal"></section>
+<body>   
+<!---->
+```
+- archivo **style.css**
+```css
+.color-fondo-rojo{
+   background-color:red;
+}
+```
+-archivo **script.js**
+```js
+//<div></div>
+let caja=document.queySelector("div")
+//agregar una clase
+let section=document.queySelector("#principal")
+section.classlist.add("color-fondo-rojo")
+//eliminar la clase 
+secction.classlist.remove("colo-fondo-rojo")
+//crear estilos directamente
+section.style.backgroundColor="red"
+```
+### Eventos (tarea-averiguar)
+
